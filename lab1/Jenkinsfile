@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Initialize terraform'
                 dir('lab1') {
-                sh 'terraform init'
+                sh "terraform init"
                 }
                 
                 /*archiveArtifacts artifacts: 'dist/trainSchedule.zip'*/
