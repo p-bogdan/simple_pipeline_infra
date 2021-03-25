@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "simple-pipeline-tfstate"
-    prefix = "terraform"
+    bucket = "gcp-terraform-k8s"
+    prefix = "pipeline1"
   }
 }
