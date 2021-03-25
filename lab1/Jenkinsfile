@@ -10,6 +10,7 @@ pipeline {
         }
         stage('Create GCP instance') {
             steps {
+              sh 'ls -al'
               echo 'Creating compute instance in GCP'
               sh 'terraform apply --auto-approve'
             }
