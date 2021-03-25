@@ -8,7 +8,7 @@ terraform {
   required_providers {
     mycloud = {
       source  = "hashicorp/google"
-      version = "~> 3.59.0"
+      version = "~> 3.60.0"
     }
   }
 }
