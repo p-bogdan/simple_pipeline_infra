@@ -1,7 +1,7 @@
 @Library('simple-pipeline')_
 mymaster()
 
-
+ stages {
 stage('Destroy instance') {
             steps {
                 timeout(time: 5, unit: 'MINUTES') {
@@ -12,3 +12,4 @@ stage('Destroy instance') {
               }
             }
         }
+ }
