@@ -5,5 +5,5 @@ def getVar() {
   echo "Hello World"
 }
 
-mymaster(this.&getVar)
+mymaster(this.getVar)
 
