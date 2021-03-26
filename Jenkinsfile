@@ -5,7 +5,7 @@
 pipeline {
     agent any
     stages {
-        stage('Loading shared steps') {
+        stage('Loading shared library steps') {
             steps {
             mymaster()
               
