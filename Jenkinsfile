@@ -2,8 +2,8 @@
 mymaster()
 
 def getVar() {
-  echo "Hello World"
+  echo "${env.myVar}"
 }
 
-mymaster(this.getVar)
+mymaster(this.&getVar)
 
