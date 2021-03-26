@@ -1,17 +1,8 @@
 @Library('simple-pipeline')_
+mymaster()
 
 
-
-pipeline {
-    agent any
-    stages {
-        stage('Loading shared library steps') {
-            steps {
-            mymaster()
-              
-            }
-        }
-        stage('Destroy instance') {
+stage('Destroy instance') {
             steps {
                 timeout(time: 5, unit: 'MINUTES') {
               input(id: "Destroying terraform instance", message: "Are you sure to destroy ${params.project_name}?", ok: 'Destroy')
@@ -21,5 +12,3 @@ pipeline {
               }
             }
         }
-    }
-}
