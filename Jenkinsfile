@@ -2,7 +2,6 @@
 //mymaster()
 
 creatingGcpInstance(this.&createGCPinstance)
-destroyingGcpInstance(this.&destroyGCPinstance)
 
  /*stage('Destroy GCP instance') {
             steps {
