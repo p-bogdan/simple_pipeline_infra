@@ -3,6 +3,7 @@
 
 creating_gcp_instance(this.&createGCPinstance)
 destroyGCPinstance(this.&destroyGCPinstance)
+
  /*stage('Destroy GCP instance') {
             steps {
             timeout(time: 5, unit: 'MINUTES') {
