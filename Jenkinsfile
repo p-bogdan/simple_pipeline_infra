@@ -1,7 +1,7 @@
 @Library('simple-pipeline')_
 //mymaster()
 
-creating_gcp_instance(this.&createGCPinstance)
+creatingGcpInstance(this.&createGCPinstance)
 destroyGCPinstance(this.&destroyGCPinstance)
 
  /*stage('Destroy GCP instance') {
